@@ -1,2 +1,1 @@
-Proyecto MasivoXML Para estancia_I
-Marcos Alejandro Shilon Gallegos.
+Proyecto MasivoXML Para estancia_I. Marcos Alejandro Shilon Gallegos.
