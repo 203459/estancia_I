@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Básico- Descarga Masiva XML</title>
+  <meta name="robots" content="index,follow" />
+  <meta name="keywords" content="Descarga masiva xml,masivo xml,+sivoxml, xml, sat, descarga masiva">
+  <meta name="description" content="Descarga másiva de xml, Descarga y Administración de XML, masivo xml, descarga masiva de CFDI, descarga web service sat, incumplidos sat,">
+  <meta name="author" content="bitzero.mx">
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+
+  <style>
+    .custom-form {
+      max-width: 500px;
+      margin: 40 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #fcd8ce;
+      padding: 20px;
+    }
+
+    .custom-form h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .custom-form .form-group {
+      margin-bottom: 20px;
+    }
+
+    .custom-form label {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .custom-form input[type="text"],
+    .custom-form input[type="email"],
+    .custom-form select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .custom-form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #f4623a;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .custom-form input[type="submit"]:hover {
+      background-color: #dc5834;
+    }
+  </style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.png"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="videotutoriales.html">VIDEOTUTORIALES</a>
+          </li>
+          <!-- Nuevo elemento para paquetes desplegables -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Merriweather Sans', sans-serif;">
+              PAQUETES
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="xmlbasico.html">BÁSICO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="xmlpremium.html">PREMIUM</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Fin de nuevo elemento -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Call to Action Section -->
+  <section class="page-section">
+    <div class="container">
+      <!-- Row fuid-->
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Licencia +SIVO XML Premium</h2>
+          <form class="custom-form" id="contact-form1" method="post" action="https://masivoxml.com/premium.php">
+            <div class="form-group">
+              <input type="text" id="name" name="Name" placeholder="Nombre Completo" class="form-control" style="font-size: 16px;" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="Email" placeholder="Correo" class="form-control" style="font-size: 16px;" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="phone" name="telephone" placeholder="Teléfono" class="form-control" style="font-size: 16px;" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="promo" name="codigo" placeholder="Código de promoción" class="form-control" style="font-size: 16px;">
+            </div>
+            <div class="form-group">				    
+              <input type="hidden" name="vsubtotal" id="vsubtotal" >
+              <input type="hidden" name="viva" id="viva" >
+              <input type="hidden" name="vtotal" id="vtotal" >
+              <select name="cantidad" class="form-control" id="cantidad">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>																
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="submit" name="Submit" value="Siguiente">
+            </div>
+          </form>
+          <div id="result"></div>
+        </div>
+        <div class="col-md-6">
+          <p class="mt-5"><strong>Precio Unitario $</strong> <span id="precio">1,799.00</span></p>
+          <p><strong>Precio Normal $</strong> <span id="precionormal"></span></p>
+          <p><strong>Descuento $</strong> <span id="descuento"></span></p>
+          <p><strong>Subtotal $</strong> <span id="subtotal"></span></p>
+          <p><strong>IVA $</strong> <span id="iva"></span></p>
+          <p><strong>Total $</strong> <span id="total"></span></p>
+        </div>
+      </div>
+      <!-- End Row fuid-->
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section class="page-section bg-white text-dark" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="mt-0">¡Contáctanos!</h2>
+        <hr class="divider my-4">
+        <p class="text-muted mb-5">Estamos aquí para ayudarte. Si tienes alguna pregunta o inquietud, no dudes en ponerte en contacto con nosotros. ¡Te responderemos lo antes posible!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+        <i class="fas fa-map-marker-alt fa-3x mb-3" style="color: #6c757d;"></i>
+        <p class="text-muted">Av. Platino No. 173, Fraccionamiento, Valle Dorado, Col. Rosario Poniente,<br>Tuxtla Gutiérrez, Chiapas C.P. 29014</p>
+      </div>
+      <div class="col-lg-4 mr-auto text-center">
+        <i class="fas fa-phone fa-3x mb-3" style="color: #6c757d;"></i>
+        <p class="text-muted">Tel. Cel.: 961 612 6245 ext. 3</p>
+        <p class="text-muted">Oficina.: (961) 225 9998</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <i class="fas fa-envelope fa-3x mb-3" style="color: #6c757d;"></i>
+        <p class="text-muted"><a href="mailto:contacto@masivoxml.com">contacto@masivoxml.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Footer -->
+ <footer class="bg-dark py-5">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="text-white">HORARIO DE ATENCIÓN</h5>
+        <p class="text-white">9:00 A.M. a 5:00 P.M.</p>
+      </div>
+      <div class="col-md-4">
+        <h5 class="text-white">VENTAS</h5>
+        <p class="text-white">ventas@masivoxml.com</p>
+      </div>
+      <div class="col-md-4">
+        <h5 class="text-white">SOPORTE</h5>
+        <p class="text-white">soporte@masivoxml.com</p>
+      </div>
+    </div>
+    <div class="small text-center text-white">Copyright &copy; 2021 </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+  <script>
+    calcular(1);
+    $(document).ready(function() {
+      $("#quantity").change(function() {
+        calcular(this.value);
+      });
+      $("#promo").change(function() {
+        calcular($("#quantity").val());
+      });
+    });
+
+    function calcular(v) {
+      $.ajax({
+          data: {
+            "precio": $("#precio").html(),
+            "cantidad": v,
+            "codigo": $("#promo").val()
+          },
+          type: "GET",
+          dataType: "json",
+          url: "calcularbasico.php",
+        })
+        .done(function(data, textStatus, jqXHR) {
+          $("#precionormal").text(data.precionormal);
+          $("#descuento").text(data.descuento);
+          $("#subtotal").text(data.subtotal);
+          $("#vsubtotal").val(data.subtotal);
+          $("#iva").text(data.iva);
+          $("#viva").val(data.iva);
+          $("#total").text(data.total);
+          $("#vtotal").val(data.total);
+        })
+        .fail(function(jqXHR, textStatus, errorThrown) {
+          if (console && console.log) {
+            console.log("La solicitud a fallado: " + textStatus);
+          }
+        });
+
+    }
+  </script>
+
+</body>
+
+</html>
